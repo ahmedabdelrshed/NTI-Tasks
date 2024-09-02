@@ -1,6 +1,6 @@
-import { Schema } from "mongoose";
+import { Document, Schema } from "mongoose";
 
-export interface ISubCategories{
+export interface ISubCategories extends Document {
     name: string;
     category: Schema.Types.ObjectId;
 }
